@@ -9,6 +9,7 @@ AngularJS select directive
 - AJAX
 - Item Locking
 - Item Disabling
+- Placeholder
 - Search
 - Expressive
 - Material Design
