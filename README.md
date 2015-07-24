@@ -24,34 +24,34 @@ AngularJS select directive
 * Example 1 *
 Example using `ng-repeat` with selected template and search.
 
-  <selector ng-model="myModel" disabled="!ctrl.isEnabled">
-    <selector-selected locked="$selected.locked">
-      <span ng-bind-html="$selected.name"></span>
-    </selector-selected>
-    <selector-search placeholder="Select something..."></selector-search>
-    <selector-choice value="row.value" ng-repeat="row in rows" disabled="row.disabled">
-      <span ng-bind-html="row.name | highlight: search"></div>
-    </selector-choice>
-  </selector>
+    <selector ng-model="myModel" disabled="!ctrl.isEnabled">
+      <selector-selected locked="$selected.locked">
+        <span ng-bind-html="$selected.name"></span>
+      </selector-selected>
+      <selector-search placeholder="Select something..."></selector-search>
+      <selector-choice value="row.value" ng-repeat="row in rows" disabled="row.disabled">
+        <span ng-bind-html="row.name | highlight: search"></div>
+      </selector-choice>
+    </selector>
 
 * Example 2 *
 Example using declaritive markup.
   
-  <selector ng-model="myModel" disabled="!ctrl.isEnabled">
-    <selector-selected locked="$selected.locked">
-      <span ng-bind-html="$selected.name"></span>
-    </selector-selected>
-    <selector-choice value="panda">Panda</selector-choice>
-    <selector-choice value="cow">Cow</selector-choice>
-    <selector-choice value="dog">Dog</selector-choice>
-  </selector>
+    <selector ng-model="myModel" disabled="!ctrl.isEnabled">
+      <selector-selected locked="$selected.locked">
+        <span ng-bind-html="$selected.name"></span>
+      </selector-selected>
+      <selector-choice value="panda">Panda</selector-choice>
+      <selector-choice value="cow">Cow</selector-choice>
+      <selector-choice value="dog">Dog</selector-choice>
+    </selector>
 
 * Example 3 *
 Using similar [Angular ng-option API](https://docs.angularjs.org/api/ng/directive/ngOptions)
 
-<selector ng-model="myColor"
-  selector-choices="color.name group by color.shade disable when color.notAnOption for color in colors">
-</selector>
+    <selector ng-model="myColor"
+      selector-choices="color.name group by color.shade disable when color.notAnOption for color in colors">
+    </selector>
 
 ## Inspirations
 
