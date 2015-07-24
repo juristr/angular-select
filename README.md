@@ -21,7 +21,8 @@ AngularJS select directive
 
 ## API
 
-*Example 1*
+_Example 1_
+
 Example using `ng-repeat` with selected template and search.
 
     <selector ng-model="myModel" disabled="!ctrl.isEnabled">
@@ -34,7 +35,8 @@ Example using `ng-repeat` with selected template and search.
       </selector-choice>
     </selector>
 
-*Example 2*
+_Example 2_
+
 Example using declaritive markup.
   
     <selector ng-model="myModel" disabled="!ctrl.isEnabled">
@@ -46,7 +48,8 @@ Example using declaritive markup.
       <selector-choice value="dog">Dog</selector-choice>
     </selector>
 
-*Example 3*
+_Example 3_
+
 Using similar [Angular ng-option API](https://docs.angularjs.org/api/ng/directive/ngOptions)
 
     <selector ng-model="myColor"
